@@ -1,0 +1,72 @@
+================================================================================
+|       BEGIN LOGGING - Thursday, 14.October 2021, 07:21:58                    |
+================================================================================
+[  0][INFO    ]------(0.000 sec) Git info:
+[  0][INFO    ]------(0.000 sec)  - SHA1:   50d8406e7
+[  0][INFO    ]------(0.000 sec)  - branch: HEAD
+[  0][INFO    ]------(0.000 sec) Solver settings
+[  0]                              - solver:                      gmg_wjac
+[  0]                              - relative residual reduction: 1e-06
+[  0]                              - pre smooth:                  3
+[  0]                              - post smooth:                 3
+[  0]                              - coarse grid:                 cg_ginkgo
+[  0]                              - ginkgo executor:             hip
+[  0]                              - ginkgo config file:          gko.json
+[  0]                            
+[  0][INFO    ]------(0.000 sec) Discretization
+[  0]                              - element type: p1
+[  0]                              - min level:    3
+[  0]                              - max level:    6
+[  0]                            
+[  0][INFO    ]------(0.000 sec) Tokamak domain and PDE config
+[  0]                              - toroidal slices:     8
+[  0]                              - poloidal slices:     6
+[  0]                              - tube layer radii:    [3 ]
+[  0]                              - coeff min:           1e-06
+[  0]                              - coeff max:           1
+[  0]                              - coeff jump location: 0.5
+[  0]                              - coeff jump width:    0.1
+[  0]                              - coarse mesh refine:  0
+[  0]                            
+[  0][INFO    ]------(0.000 sec) App settings
+[  0]                              - DB file:                          Tokamak.db
+[  0]                              - coarse mesh and quit:             false
+[  0]                              - VTK:                              false
+[  0]                              - VTK directory:                    ./vtk
+[  0]                              - precomputing element matrices:    true
+[  0]                              - output linear system and vectors: false
+[  0]                              - output linear system base name:   test
+[  0]                              - output linear system format:      ascii_matlab
+[  0]                            
+[  0][INFO    ]------(0.000 sec) [progress] Setting up torus mesh ...
+[  0][INFO    ]------(0.005 sec) [progress] Setting up tokamak blending map ...
+[  0][INFO    ]----(181.362 sec) ====================== PrimitiveStorage ======================
+[  0]                             - mesh dimensionality:                              3D
+[  0]                             - processes:                                        128
+[  0]                             - neighbor processes (min, max, avg):               38, 94, 55.25
+[  0]                             - primitive distribution:
+[  0]                                            +-------------------------------------------+
+[  0]                                            |    total |      min |      max |      avg |
+[  0]                               +------------+----------+----------+----------+----------+
+[  0]                               | primitives |      784 |        6 |        7 |      6.1 |
+[  0]                               +------------+----------+----------+----------+----------+
+[  0]                               |   vertices |       56 |        0 |        1 |      0.4 |
+[  0]                               +------------+----------+----------+----------+----------+
+[  0]                               |      edges |      248 |        1 |        2 |      1.9 |
+[  0]                               +------------+----------+----------+----------+----------+
+[  0]                               |      faces |      336 |        2 |        3 |      2.6 |
+[  0]                               +------------+----------+----------+----------+----------+
+[  0]                               |      cells |      144 |        1 |        2 |      1.1 |
+[  0]                               +------------+----------+----------+----------+----------+
+[  0]                            ==============================================================
+[  0]                            
+[  0][INFO    ]----(181.362 sec) DoFs
+[  0][INFO    ]----(181.362 sec) level |          inner |          total 
+[  0][INFO    ]----(181.362 sec) ---------------------------------------
+[  0][INFO    ]----(190.649 sec)     3 |          10816 |          13888
+[  0][INFO    ]----(199.921 sec)     4 |          92288 |         104576
+[  0][INFO    ]----(208.504 sec)     5 |         762112 |         811264
+[  0][INFO    ]----(219.220 sec)     6 |        6193664 |        6390272
+[  0][INFO    ]----(219.220 sec) ---------------------------------------
+[  0][INFO    ]----(219.220 sec) [progress] Allocation of functions and operator setup ...
+[  0][INFO    ]----(622.825 sec) [progress] Precomputing element matrices ...
